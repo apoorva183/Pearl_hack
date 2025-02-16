@@ -1,0 +1,305 @@
+/* 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+.dashboard-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: white;
+    transition: 0.3s ease;
+}
+
+.search-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.search-input:focus {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.search-button {
+    padding: 15px 25px;
+    border-radius: 12px;
+    background-color: #6a11cb;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #2575fc;
+}
+
+.users-container {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.user-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.user-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.user-email,
+.user-skills,
+.user-research,
+.user-availability,
+.user-education {
+    font-size: 14px;
+    color: #555;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: #555;
+}
+
+
+.zoom-button {
+    margin-top: 10px;
+    padding: 12px 20px;
+    width: 100%;
+    background: #6a11cb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.zoom-button:hover {
+    background: #2575fc;
+}
+
+
+.no-matches {
+    font-size: 18px;
+    color: white;
+    margin-top: 20px;
+} */
+
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* LOGO & HEADER */
+/* LOGO & HEADER */
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 150px; /* Adjust size */
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.app-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #4a00e0;
+    text-align: center;
+}
+
+.tagline {
+    font-size: 16px;
+    color: #666;
+    font-style: italic;
+    text-align: center;
+}
+
+
+/* DASHBOARD CONTAINER */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* SEARCH BOX */
+.search-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 16px;
+    outline: none;
+    border: 2px solid #4a00e0;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+.search-input::placeholder {
+    color: #777;
+}
+
+.search-button {
+    padding: 15px 25px;
+    border-radius: 12px;
+    background-color: #4a00e0;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #8e2de2;
+}
+
+/* USER CARDS */
+.users-container {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.user-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.user-name {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+
+.user-email,
+.user-skills,
+.user-research,
+.user-availability,
+.user-education {
+    font-size: 14px;
+    color: #555;
+}
+
+/* SEND EMAIL BUTTON */
+.zoom-button {
+    margin-top: 10px;
+    padding: 12px 20px;
+    width: 100%;
+    background: #4a00e0;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.zoom-button:hover {
+    background: #8e2de2;
+}
+
+/* NO MATCHES */
+.no-matches {
+    font-size: 18px;
+    color: #777;
+    margin-top: 20px;
+}

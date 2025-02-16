@@ -1,8 +1,6 @@
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker, declarative_base
+import firebase_admin
+from firebase_admin import credentials, firestore
 
-# Database Setup (Using SQLite, can be switched to PostgreSQL)
-DATABASE_URL = "sqlite:///./hackathon.db"
-engine = create_engine(DATABASE_URL, connect_args={"check_same_thread": False})
-SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
-Base = declarative_base()
+cred = credentials.Certificate("serviceAccountKey.json")
+firebase_admin.initialize_app(cred)
+db = firestore.client()
